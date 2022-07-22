@@ -1,0 +1,113 @@
+    *{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    /*NAVIGATION*/
+
+    .logo{
+        font-size: 50px;
+        margin: 10px;
+        color: white;
+    }
+    .grid{
+        display: grid;
+
+        background-color: #3ebfff
+        ;
+    }
+    nav{
+        grid-template-columns: 1fr 1fr;
+    }
+    .burger{
+        font-size: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        display: none;
+    text-align: right;
+    }
+
+
+    /*En Tête*/
+    header{
+        padding-top: 140px;
+        text-align: center;
+        background-image: url("../img/photos/image-header.jpg");
+        height: 750px;
+        width: 1519px;
+        background-size: cover;
+        color: white;
+
+
+        .header_titre{
+            font-size: 55px;
+            font-family: 'Fraunces', serif;
+            margin-left: 55px;
+        }  
+        .header_fleche{
+            font-size: 180px;
+            padding-top: 120px;
+            margin-left: 55px;
+        }
+    }
+
+
+    /* MEDIA QUERIES */
+
+
+/* PLUS GRAND QUE 800 PX */
+
+    @media screen and (min-width: 801px) {
+    .links{
+        display:flex;
+        gap: 30px;
+    }
+    
+    }
+
+
+    /* PLUS PETIT QUE 800 PX */
+    @media screen and (max-width: 800px) {
+        .links:not(.is-visible){
+            display: none;
+        }
+        .burger{
+            display: block;
+            color: white;
+            a{
+                color: white;
+            }
+        }
+
+       
+
+        .header{
+            background-image: url("../img/photos/image-header.jpg");
+            background-size: 800px;
+            background-repeat: no-repeat;
+            text-align: center;
+        
+        .header_titre{
+          width: 100px;
+          height: 15px;
+         margin-top: -150px;
+         display: flex;
+       
+     
+    }
+
+    .header_fleche{
+    height: 80px;
+    width: 10px;
+}
+}
+}
+
+
+
+/*IMPORT*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,100&display=swap');
+
